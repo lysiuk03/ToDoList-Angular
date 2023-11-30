@@ -12,4 +12,9 @@ export class TaskListComponent {
   removeTask(index: number): void {
     this.tasks.splice(index, 1);
   }
+  addTask(task:ITask){
+    this.tasks.push(task);
+  }
+
+  
 }

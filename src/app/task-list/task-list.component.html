@@ -1,4 +1,6 @@
 
+<app-create-task (createEvent)="addTask($event)"></app-create-task>
+
 <app-task
   *ngFor="let task of tasks; let taskIndex = index"
   [task]="task"
